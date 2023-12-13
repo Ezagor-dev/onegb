@@ -85,7 +85,7 @@ struct MessageInBoxView: View {
         let url = URL(string: "https://api.openai.com/v1/engines/davinci/completions")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer YOUR_API_KEY", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         // Construct the JSON body with the parameters for the API call
